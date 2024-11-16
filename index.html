@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Day Weather Forecast</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+</head>
+
+<body>
+
+    <div class="weather-container">
+
+        <nav>
+            <div class="navbar">
+                <h2>Weather Forecast</h2>
+                <div class="navbar-right">
+                    <input type="search" id="city-input" placeholder="Enter city name" aria-label="Search">
+                    <button id="fetch-weather" type="button">Get Weather</button>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+        <div id="forecast">
+            <!-- Day 0 -->
+            <div class="weather-card" id="day-0">
+                <h2><span id="day-0-data"></span></h2>
+                <p>City: <span id="day-0-name"></span>, <span id="day-0-region"></span>, <span
+                        id="day-0-country"></span></p>
+                <p>Temperature: <span id="day-0-temp"></span></p>
+                <p>Condition: <span id="day-0-condition-text"></span></p>
+                <img id="day-0-condition-icon" alt="Weather Icon">
+                <p>Wind: <span id="day-0-wind"></span></p>
+                <p>Humidity: <span id="day-0-humidity"></span></p>
+                <p>Feels Like: <span id="day-0-feels-like"></span></p>
+                <p>Chance of Rain: <span id="day-0-chance-rain"></span></p>
+                <p>Chance of Snow: <span id="day-0-chance-snow"></span></p>
+                <p>UV Index: <span id="day-0-uv"></span></p>
+                <p>Sunrise: <span id="day-0-sunrise"></span></p>
+                <p>Sunset: <span id="day-0-sunset"></span></p>
+                <p>Moonrise: <span id="day-0-moonrise"></span></p>
+                <p>Moonset: <span id="day-0-moonset"></span></p>
+                <p>Moon Phase: <span id="day-0-moon-phase"></span></p>
+            </div>
+
+            <!-- Day 1 -->
+            <div class="weather-card" id="day-1">
+                <h2><span id="day-1-data"></span></h2>
+                <p>City: <span id="day-1-name"></span>, <span id="day-1-region"></span>, <span
+                        id="day-1-country"></span></p>
+                <p>Temperature: <span id="day-1-temp"></span></p>
+                <p>Condition: <span id="day-1-condition-text"></span></p>
+                <img id="day-1-condition-icon" alt="Weather Icon">
+                <p>Wind: <span id="day-1-wind"></span></p>
+                <p>Humidity: <span id="day-1-humidity"></span></p>
+                <p>Feels Like: <span id="day-1-feels-like"></span></p>
+                <p>Chance of Rain: <span id="day-1-chance-rain"></span></p>
+                <p>Chance of Snow: <span id="day-1-chance-snow"></span></p>
+                <p>UV Index: <span id="day-1-uv"></span></p>
+                <p>Sunrise: <span id="day-1-sunrise"></span></p>
+                <p>Sunset: <span id="day-1-sunset"></span></p>
+                <p>Moonrise: <span id="day-1-moonrise"></span></p>
+                <p>Moonset: <span id="day-1-moonset"></span></p>
+                <p>Moon Phase: <span id="day-1-moon-phase"></span></p>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="weather-card" id="day-2">
+                <h2><span id="day-2-data"></span></h2>
+                <p>City: <span id="day-2-name"></span>, <span id="day-2-region"></span>, <span
+                        id="day-2-country"></span></p>
+                <p>Temperature: <span id="day-2-temp"></span></p>
+                <p>Condition: <span id="day-2-condition-text"></span></p>
+                <img id="day-2-condition-icon" alt="Weather Icon">
+                <p>Wind: <span id="day-2-wind"></span></p>
+                <p>Humidity: <span id="day-2-humidity"></span></p>
+                <p>Feels Like: <span id="day-2-feels-like"></span></p>
+                <p>Chance of Rain: <span id="day-2-chance-rain"></span></p>
+                <p>Chance of Snow: <span id="day-2-chance-snow"></span></p>
+                <p>UV Index: <span id="day-2-uv"></span></p>
+                <p>Sunrise: <span id="day-2-sunrise"></span></p>
+                <p>Sunset: <span id="day-2-sunset"></span></p>
+                <p>Moonrise: <span id="day-2-moonrise"></span></p>
+                <p>Moonset: <span id="day-2-moonset"></span></p>
+                <p>Moon Phase: <span id="day-2-moon-phase"></span></p>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="weather-card" id="day-3">
+                <h2><span id="day-3-data"></span></h2>
+                <p>City: <span id="day-3-name"></span>, <span id="day-3-region"></span>, <span
+                        id="day-3-country"></span></p>
+                <p>Temperature: <span id="day-3-temp"></span></p>
+                <p>Condition: <span id="day-3-condition-text"></span></p>
+                <img id="day-3-condition-icon" alt="Weather Icon">
+                <p>Wind: <span id="day-3-wind"></span></p>
+                <p>Humidity: <span id="day-3-humidity"></span></p>
+                <p>Feels Like: <span id="day-3-feels-like"></span></p>
+                <p>Chance of Rain: <span id="day-3-chance-rain"></span></p>
+                <p>Chance of Snow: <span id="day-3-chance-snow"></span></p>
+                <p>UV Index: <span id="day-3-uv"></span></p>
+                <p>Sunrise: <span id="day-3-sunrise"></span></p>
+                <p>Sunset: <span id="day-3-sunset"></span></p>
+                <p>Moonrise: <span id="day-3-moonrise"></span></p>
+                <p>Moonset: <span id="day-3-moonset"></span></p>
+                <p>Moon Phase: <span id="day-3-moon-phase"></span></p>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="weather-card" id="day-4">
+                <h2><span id="day-4-data"></span></h2>
+                <p>City: <span id="day-4-name"></span>, <span id="day-4-region"></span>, <span
+                        id="day-4-country"></span></p>
+                <p>Temperature: <span id="day-4-temp"></span></p>
+                <p>Condition: <span id="day-4-condition-text"></span></p>
+                <img id="day-4-condition-icon" alt="Weather Icon">
+                <p>Wind: <span id="day-4-wind"></span></p>
+                <p>Humidity: <span id="day-4-humidity"></span></p>
+                <p>Feels Like: <span id="day-4-feels-like"></span></p>
+                <p>Chance of Rain: <span id="day-4-chance-rain"></span></p>
+                <p>Chance of Snow: <span id="day-4-chance-snow"></span></p>
+                <p>UV Index: <span id="day-4-uv"></span></p>
+                <p>Sunrise: <span id="day-4-sunrise"></span></p>
+                <p>Sunset: <span id="day-4-sunset"></span></p>
+                <p>Moonrise: <span id="day-4-moonrise"></span></p>
+                <p>Moonset: <span id="day-4-moonset"></span></p>
+                <p>Moon Phase: <span id="day-4-moon-phase"></span></p>
+            </div>
+            <div class="alerts-container">
+                <h2>Weather Alerts</h2>
+                <div id="alerts-list"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>
