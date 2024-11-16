@@ -1,6 +1,6 @@
 // Base API URL
 const API_BASE_URL = "https://api.weatherapi.com/v1/forecast.json";
-const ALERTS_API_URL = "http://api.weatherapi.com/v1/alerts.json";
+const ALERTS_API_URL = "https://api.weatherapi.com/v1/alerts.json";
 const API_KEY = "55dfbfa23edd4a57a3a172415241511";
 
 // Function to fetch and display weather data
